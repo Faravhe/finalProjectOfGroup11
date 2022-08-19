@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="assets/style.css">
   </head>
 
-  <body>
+  <body id="intro">
     <!--landing page body-->
-    <section id="intro">
+    <section>
 <!--Heading-->
          <!--main field-->
          <div class="container bg-dark opacity-75 text-white text-center">
@@ -33,16 +33,16 @@
        <div class="container my-5">
         <div class="row">
           <div class="col-5">
-    <form>
+    <form class="bg-dark opacity-75 text-white fw-bold">
       <div class="mb-3">
-        <div class="p-3 mb-2 bg-warning text-dark fw-bold"><label for="name" class="form-label">Name of the task</label>
+        <div class="p-3 mb-2"><label for="name" class="form-label">Name of the task</label>
         <input type="text" class="form-control" id="name">
       </div>
-        <div class="p-3 mb-2 bg-warning text-dark fw-bold"><label for="exampleInputEmail1" class="form-label">Description</label>
+        <div class="p-3 mb-2"><label for="exampleInputEmail1" class="form-label">Description</label>
         <input type="email" class="form-control" id="exampleInputEmail1"/>
       </div>
       <div class="mb-3">
-    <select class="form-select bg-warning fw-bold" aria-label="Status of the Project">
+    <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
       <option selected>Status of the Project:</option>
       <option value="1">Started</option>
       <option value="2">On Progress</option>
@@ -50,11 +50,11 @@
     </select>
   </div>
       <div class="mb-3">
-        <div class="p-3 mb-2 bg-warning text-dark fw-bold"><label for="exampleInputPassword1" class="form-label">Due Date</label>
+        <div class="p-3 mb-2"><label for="exampleInputPassword1" class="form-label">Due Date</label>
         <input type="date" class="form-control" id="exampleInputPassword1">
       </div>
     <div class="dropdown">
-      <button class="btn btn-warning dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
         aria-expanded="false">
         Assign to:
       </button>
