@@ -32,51 +32,57 @@
         <!--Main section input section-->
         <div class="row">
           <div class="col-5">
-    <form class="bg-dark opacity-75 text-white fw-bold">
-      <div class="mb-3">
-        <div class="p-3 mb-2"><label for="name" class="form-label">Name of the task</label>
-        <input type="text" class="form-control" id="name">
-      </div>
-        <div class="p-3 mb-2"><label for="exampleInputEmail1" class="form-label">Description</label>
-        <input type="email" class="form-control" id="exampleInputEmail1"/>
-      </div>
-      <div class="mb-3">
-    <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
-      <option selected>Status of the Project:</option>
-      <option value="Started">Started</option>
-      <option value="On Progress">On Progress</option>
-      <option value="Completed">Completed</option>
-    </select>
-  </div>
-      <div class="mb-3">
-        <div class="p-3 mb-2"><label for="exampleInputPassword1" class="form-label">Due Date</label>
-        <input type="date" class="form-control" id="exampleInputPassword1">
-      </div>
-    <div class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Assign to:
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Ethiopia Worku</a></li>
-        <li><a class="dropdown-item" href="#">Tauhidul Islam</a></li>
-        <li><a class="dropdown-item" href="#">Banchi</a></li>
-        <li><a class="dropdown-item" href="#">Alemayehu</a></li>
-        <li><a class="dropdown-item" href="#">Nataly</a></li>
-      </ul>
-    </div>
-  </div>
-     </div>
+            <form class="bg-dark opacity-75 text-white fw-bold">
+              <!--Task name field-->
+                <div class="p-3 mb-3">
+                  <label for="name" class="form-label">Name of the task</label>
+                  <input type="text" class="form-control" id="name">
+              </div>
+              <!--Task Description field-->
+              <div class="p-3 mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Description</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"/>
+              </div>
+              <!--Status select field-->
+              <div class="mb-3">
+                <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
+                  <option selected>Status of the Project:</option>
+                  <option value="Started">Started</option>
+                  <option value="On Progress">On Progress</option>
+                  <option value="Completed">Completed</option>
+                </select>
+              </div>
+              <!--Due date-->
+              <div class="mb-3">
+                <div class="p-3 mb-2"><label for="exampleInputPassword1" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+              </div>
+              <!--Status dropdown selection-->
+              <div class="dropdown" data-toggle="collapse" data-target="#statusCards">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Assign to:
+              </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Ethiopia Worku</a></li>
+                    <li><a class="dropdown-item" href="#">Tauhidul Islam</a></li>
+                    <li><a class="dropdown-item" href="#">Banchi</a></li>
+                    <li><a class="dropdown-item" href="#">Alemayehu</a></li>
+                    <li><a class="dropdown-item" href="">Nataly</a></li>
+                  </ul>
+              </div>
+          </div>
+              </div>
 
-   </form>
+            </form>
           </div>
         </div>
         <!--Main section input section ends-->
         <!--Status section-->
         <div class="row">
-          <div class="col-5">
+          <div class="col-5 collapse" id="statusCards">
             <!--Nataly's status card-->
-            <div class="card collapse" id="Nataly">
+            <div class="card" id="Nataly">
               <div class="card-body">
                 <h5 class="card-title">Nataly</h5>
                 <h6 class="card-subtitle mb-2 text-muted">On progress</h6>
@@ -85,7 +91,7 @@
             </div>
 
             <!--Alemayehu's status card-->
-            <div class="card collapse" id="Alemayehu">
+            <div class="card" id="Alemayehu">
               <div class="card-body">
                 <h5 class="card-title">Alemayehu</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Just Assigned</h6>
