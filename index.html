@@ -4,11 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Group 11</title>
+    <!--Bootstap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Main Css file-->
     <link rel="stylesheet" href="assets/style.css">
   </head>
-  <body>
-    <h1>Hello, Group 11!</h1>
+
+  <body id="intro">
+    <!--landing page body-->
+    <section>
+<!--Heading-->
+         <!--main field-->
+         <div class="container bg-dark opacity-75 text-white text-center">
+          <div class="row py-3">
+           <!--logo-->
+           <div class="col-3">
+        <img id="logo" class="img-fluid" src="assets/img/logo.png" alt="logo" />
+      </div>
+      <div class="col-9">
+        <!--Main heading-->
+           <h1 class="display-3"> The Wheel of Life</h1>
+          </div>
+          </div>
+      </div>
+    <!--Heading ends-->
+
+       <!--Main section input section-->
+       <div class="container my-5">
+        <div class="row">
+          <div class="col-5">
+    <form class="bg-dark opacity-75 text-white fw-bold">
+      <div class="mb-3">
+        <div class="p-3 mb-2"><label for="name" class="form-label">Name of the task</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+        <div class="p-3 mb-2"><label for="exampleInputEmail1" class="form-label">Description</label>
+        <input type="email" class="form-control" id="exampleInputEmail1"/>
+      </div>
+      <div class="mb-3">
+    <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
+      <option selected>Status of the Project:</option>
+      <option value="1">Started</option>
+      <option value="2">On Progress</option>
+      <option value="3">Completed</option>
+    </select>
+  </div>
+      <div class="mb-3">
+        <div class="p-3 mb-2"><label for="exampleInputPassword1" class="form-label">Due Date</label>
+        <input type="date" class="form-control" id="exampleInputPassword1">
+      </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Assign to:
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Ethiopia Worku</a></li>
+        <li><a class="dropdown-item" href="#">Tauhidul Islam</a></li>
+        <li><a class="dropdown-item" href="#">Banchi</a></li>
+        <li><a class="dropdown-item" href="#">Alemayehu</a></li>
+        <li><a class="dropdown-item" href="https://nataly-task-example.morkie22.repl.co">Nataly</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </form>
+</div>
+</div>
+</div>
+</section>
+  <!--main field ends-->
+
+
+     <!--Js--> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
