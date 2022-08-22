@@ -1,0 +1,24 @@
+/*bg style*/
+#bg-img {
+        background-image: url("../img/banchiBg.png");
+        
+      }
+
+/*logo style*/
+  #logo{
+   width: 200px;
+    height:15vh;
+
+  }
+.header {
+min-width:100%;
+    height:20vh;
+}
+.main {
+    margin-left:500px;
+
+
+}
+.box {
+    display: flex;
+}
