@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Group 11</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/ale.css">
+  </head>
+  <body>
+  
+    <div class="jumbotron text-center bg-dark text-white">
+        <h1>Group 11 to do list app </h1>
+        <a href="#list"> Group Members</a>
+    
+      </div>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+
+
+
+   <div class="p-3 mb-2 bg-info text-dark">
+     <h1 class="Display-3 text-center"> Always Learning </h1>
+
+</div>
+
+<div class="grid-container">
+    <div class="raw">
+        <div class="col-4">
+        <div id="myDIV bg-info" class="header" >
+            <h2>programing language list</h2>
+             <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+            <ul id="myUL">
+                <li  class="checked">HTML and CSS.</li>
+                <li class="checked">bootstrap</li>
+                <li class="checked">JavaScript.</li>
+                <li>Python.</li>
+                <li>C++</li>
+                <li>Java</li>
+                
+              </ul>
+            
+          </div>
+        </div>
+          <div class="col-5 " >
+            <form>
+              <div class="mb-3">
+                <div class="p-3 mb-2 bg-secondary text-dark fw-bold"><label for="name" class="form-label">programming assignment</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+                <div class="p-3 mb-2 bg-secondary text-dark fw-bold"><label for="exampleInputEmail1" class="form-label">Description</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"/>
+              </div>
+             
+            </select>   
+            <select class="form-select bg-secondary fw-bold" aria-label="Status of the Project">
+              <option selected>Status of the Assignment:</option>
+              <option value="1">Started</option>
+              <option value="2">On Progress</option>
+              <option value="3">Completed</option>
+            </select>
+              <div class="mb-3">
+                <div class="p-3 mb-2 bg-secondary text-dark fw-bold"><label for="exampleInputPassword1" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            </div>
+          
+
+    </div>
+</div>
+
+ 
+<div class="col-12" id="list">
+<div class="dropdown ">
+  <button class="btn btn-warning dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+    aria-expanded="false">
+    Assign to:
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Ethiopia Worku</a></li>
+    <li><a class="dropdown-item" href="#">Tauhidul Islam</a></li>
+    <li><a class="dropdown-item" href="#">Banchi</a></li>
+    <li><a class="dropdown-item" href="#">Alemayehu</a></li>
+    <li><a class="dropdown-item" href="#">Nataly</a></li>
+  </ul>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</div>
+<!-- </div> -->
+</body>
+
+</html>
