@@ -1,15 +1,5 @@
 
 /*logo style*/
-#intro {
-        background-image: url("../assets/img/background.jpg");
-        
+body{
+        background-image: url("../img/background.jpg");
       }
-
-/*logo style*/
-  #logo{
-   width:100px; 
-    height:100px;
-    width:100px; 
-    height: 100px; 
-    border: 0;
-  }
