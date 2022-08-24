@@ -1,7 +1,21 @@
 
 /*logo style*/
 body {
+        /* Add image */
         background-image: url("../assets/img/background.jpg");
+        /* Make image center */
+        background-position: center center;
+        /* Make image fixed */
+        background-attachment: fixed;
+         /* Set background size auto */
+         background-size: auto;
         
       }
+/* Media query for mobile devices  */
+@media only screen and (max-width: 767px)      
+ { body{
+      /* Add image */
+      background-image: url("../assets/img/background.jpg");
+    }
+  }
       
