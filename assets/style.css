@@ -8,7 +8,7 @@ body {
         /* Make image fixed */
         background-attachment: fixed;
          /* Set background size auto */
-         background-size: auto;
+         background-size: cover;
         
       }
 /* Media query for mobile devices  */
