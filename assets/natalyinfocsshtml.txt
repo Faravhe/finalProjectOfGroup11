@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<div class="has-bg-img">
+  <div class="box">
+</div>
+</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nataly Briceno Guerrero</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="p-6 mb-6 bg-warning text-dark">
+     <h1 class=""> Basic chores</h1>
+  </div>
+</div>
+</div>
+</body>
+<form>
+  <div class="mb-3">
+    <div class="p-3 mb-2 bg-success text-dark fw-bold"><label for="name" class="form-label">Name of the task</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="mb-3">
+    <div class="p-3 mb-2 bg-success text-dark fw-bold"><label for="text" class="form-label">Description</label>
+    <input type="text" class="form-control" id="text"/>
+  </div>
+<select class="form-select bg-success fw-bold" aria-label="Default select example">
+  <option selected>Assign to:</option>
+  <option value="1">Nataly</option>
+</select>   
+<select class="form-select bg-success fw-bold" aria-label="Status of the Project">
+  <option selected>Status of the Project:</option>
+  <option value="1">Started</option>
+  <option value="2">On Progress</option>
+  <option value="3">Completed</option>
+</select>
+</div>
+</div> 
+  <div class="mb-3">
+    <div class="p-3 mb-2 bg-success text-dark fw-bold"><label for="date" class="form-label">Due Date</label>
+    <input type="date" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>  
+</div> 
+<div class="card border border-primary shadow-0 " style="background-color:#e32400;">
+  <div class="card-header">Team member 1</div>
+  <div class="card-body">
+    <h5 class="card-title">Coding</h5>
+    <p class="card-text">
+      Working on project.
+    </p>
+  </div>
+  <div class="card-footer">On progress since sunday</div>
+</div>
+<br>
+<br>  
+<div class="card border border-primary shadow-0 " style="background-color:#fec700;">
+  <div class="card-header">Team member 2</div>
+  <div class="card-body">
+    <h5 class="card-title">Working on coding</h5>
+    <p class="card-text">
+      Adding a new card sample to the project.
+    </p>
+  </div>
+  <div class="card-footer">half days ago</div>
+</div>
+<br>
+<br>
+<div class="card border border-primary shadow-0 " style="background-color:#77bb41;">
+  <div class="card-header">team member 3</div>
+  <div class="card-body">
+    <h5 class="card-title">On progress creating of a new card</h5>
+    <p class="card-text">
+      Working on creating a design.
+    </p>
+  </div>
+  <div class="card-footer">5 days ago</div>
+<br>
+<br>
+<br>
+<br>  
+</div>
+<br>
+  <br>
+<div class="card border border-primary shadow-0 " style="background-color:#5e30eb;">
+  <div class="card-header">Team member 4</div>
+  <div class="card-body">
+    <h5 class="card-title">Basic chores </h5>
+    <p class="card-text">
+      Her project is completed see her website.
+    </p>
+  </div>
+  <div class="card-footer">6 days ago</div>
+</div>  
+<br>
+<br>
+  <div class="card text-center border border-primary shadow-0 " style="background-color:#f9d3e0;">
+  <div class="card-header">Team member 5</div>
+  <div class="card-body">
+    <h5 class="card-title">Git master</h5>
+    <p class="card-text">
+      Review team card and approval.
+    </p>
+  </div>
+  <div class="card-footer">7 days ago</div>
+</div>
+<br>
+<br>  
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-bordered table-danger border-warning">
+    <thead>
+      <tr>
+        <th scope="col">Alemayu</th>
+        <th scope="col">Islam</th>
+        <th scope="col">Banchi</th>
+        <th scope="col">Ethiopia</th>
+        <th scope="col">Nataly</th>
+        <th scope="col"># of tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+
+    <caption>
+      Combination of daily activities
+    </caption>
+
+  </table>
+</div>  
+<button class="btn btn-success" type="submit">Submit</button>
+  </div>
+</div>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</div>
+
+</html>
+//end of nataly html//
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.ibb.co/yQv5044/pexels-steve-johnson-1269968.jpg");
+}
+h1{
+  font-family: serif;
+  font-size: 200px;
+  font-display: block;
+  background-image: url("https://i.ibb.co/yQv5044/pexels-steve-johnson-1269968.jpg");
+}
+.mask{
+  align-content: center;
+  font-size: 100px;
+  font-display: block;
+  background-image: url("https://i.ibb.co/yQv5044/pexels-steve-johnson-1269968.jpg")
+}
+// end of nataly css//
