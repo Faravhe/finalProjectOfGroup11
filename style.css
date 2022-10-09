@@ -18,4 +18,13 @@ body {
       background-image: url("../assets/img/background.jpg");
     }
   }
-      
+  input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #e2e2ea;
+    border-color: none;
+  
+  }  
