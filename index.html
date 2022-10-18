@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!--Main Css file-->
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
   <body>
@@ -18,7 +18,7 @@
   <section>
     <!--Heading-->
              <!--main field-->
-             <div class="container bg-dark opacity-75 text-white text-center">
+             <div class="bg-dark opacity-75 text-white fw-bold">
               <div class="row">
                <!--logo-->
                <div class="col-3">
@@ -30,104 +30,68 @@
               </div>
               </div>
           </div>
-
-      </div>
-    <!--Heading ends-->
-
-       <!--Main section input section-->
-       <div class="container my-5">
-        <div class="row">
-          <div class="col-5">
-    <form class="bg-dark opacity-75 text-white fw-bold">
-      <div class="mb-3">
-        <div class="p-3 mb-2"><label for="name" class="form-label">Name of the task</label>
-        <input type="text" class="form-control" id="name">
-      </div>
-        <div class="p-3 mb-2"><label for="exampleInputEmail1" class="form-label">Description</label>
-        <input type="email" class="form-control" id="exampleInputEmail1"/>
-      </div>
-      <div class="mb-3">
-    <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
-      <option selected>Status of the Project:</option>
-      <option value="1">Started</option>
-      <option value="2">On Progress</option>
-      <option value="3">Completed</option>
-    </select>
-  </div>
-      <div class="mb-3">
-        <div class="p-3 mb-2"><label for="exampleInputPassword1" class="form-label">Due Date</label>
-        <input type="date" class="form-control" id="exampleInputPassword1">
-      </div>
-    <div class="dropdown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Assign to:
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Ethiopia Worku</a></li>
-        <li><a class="dropdown-item" href="#">Tauhidul Islam</a></li>
-        <li><a class="dropdown-item" href="#">Banchi</a></li>
-        <li><a class="dropdown-item" href="#">Alemayehu</a></li>
-        <li><a class="dropdown-item" href="https://nataly-task-example.morkie22.repl.co">Nataly</a></li>
-         </ul>
-         <input type="submit" value="Submit" />
-    </div>
-  </div>
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</section>
-  <!--main field ends-->
         <!--Heading ends-->
            <div class="container my-4">
               <!--Main section input section-->
               <div class="row">
                 <div class="col-5">
-                  <form class="bg-dark opacity-75 text-white fw-bold" action="">
-                    <!--Task name field-->
-                      <div class="p-3 mb-3">
-                        <label for="name" class="form-label">Name of the task</label>
-                        <input type="text" class="form-control" id="name">
+                  <form class="bg-dark opacity-75 text-white fw-bold">
+                    <div class="p-3 mb-3" id="newTaskNameInput">
+                      <label for="validationServer01" class="form-label">Name of the task</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer01" value="name of the task" required>
+                      <div id="validationServer03Feedback" class="invalid-feedback">
+                        Please add a task.
                       </div>
-                    <!--Task Description field-->
-                      <div class="p-3 mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Description</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"/>
+                        <div id="form"> </div>
+                      <div class="valid-feedback">
+                        Looks good!
                       </div>
-                    <!--Status select field-->
-                      <div class="mb-3">
+                    </div>
+                    <div class="p-3 mb-3" id="description">
+                      <label for="validationServer03" class="form-label">Description</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                      <div id="validationServer03Feedback" class="invalid-feedback">
+                        Please provide a description.
+                      </div>
+                    </div>
+                    <div class="mb-3" id="status of the project">
                       <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
                         <option selected>Status of the Project:</option>
                         <option value="Started">Started</option>
                         <option value="On Progress">On Progress</option>
                         <option value="Completed">Completed</option>
                       </select>
+                      <div class="valid-feedback">
+                        Looks good!
                       </div>
-                    <!--Due date-->
-                      <div class="p-3 mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Due Date</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <!--dropdown selection-->
-                    <div class="dropdown p-3 mb-3">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Assign to:
-                    </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard" href="#ethiopiasCard">Ethiopia Worku</a></li>
-                          <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="islamsCard" href="#islamsCard">Tauhidul Islam</a></li>
-                          <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="bancisCard" href="#banchisCard">Banchi</a></li>
-                          <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="alemayehusCard" href="#alemayehusCard">Alemayehu</a></li>
-                          <li><a  class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard"  href="#natalysCard">Nataly</a></li>
+                      <div class="invalid-feedback">
+                        Please select!
+                      </div>
+                    <div class="dropdown p-3 mb-3" id="assignTo">
+                      <button class="btn dropdown-toggle" type="button" id="assignTo" data-bs-toggle="dropdown" aria-expanded="false">
+                        Assign to:
+                      </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard" href="#ethiopiasCard">Ethiopia Worku</a></li>
+                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="islamsCard" href="#islamsCard">Tauhidul Islam</a></li>
+                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="bancisCard" href="#banchisCard">Banchi</a></li>
+                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="alemayehusCard" href="#alemayehusCard">Alemayehu</a></li>
+                            <li><a  class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard"  href="#natalysCard">Nataly</a></li>
                         </ul>
+                      </div>
+                    <div class="md-3" id="dueDate">
+                      <label for="validationServer05" class="form-label">dueDate</label>
+                      <input type="date" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                      <div id="validationServer05Feedback" class="invalid-feedback">
+                      Please add a date.
+                      </div>
                     </div>
-                    <!--dropdown selection ends-->
+                    <div class="col-12" id="submit">
+                      <button class="p-3 mb-3" type="submit" id="button">Submit</button>
+                    </div>
                   </form>
                 </div>    
-              </div>
-            
+              </div>           
                   <!--Main section input section ends-->
               <!--Status section-->
               <div class="row">
@@ -219,13 +183,11 @@
                 </div>
               </div>
             <!--status card section ends-->
-         </div>
+         </div>  
     </section>
      <!--Js--> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <scripts src="/taskManajer.js"></scripts>
-    <script src="index.js"></script>  
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+     <script type="module" src="/JS/index.js"></script>
+     <scripts type="module" src="/JS/taskManager.js"></scripts>
   </body>
 </html>
