@@ -1,193 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Group 11</title>
-  <!--Bootstap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <!--Main Css file-->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-  <body>
-    <!--landing page body-->
-    
-  <!--main field ends-->
-  <section>
-    <!--Heading-->
-             <!--main field-->
-             <div class="bg-dark opacity-75 text-white fw-bold">
-              <div class="row">
-               <!--logo-->
-               <div class="col-3">
-            <img id="logo" class="img-fluid" src="assets/img/logo.png" alt="logo" />
-          </div>
-          <div class="col-9">
-            <!--Main heading-->
-               <h1 class="display-3"> The Wheel of Life</h1>
-              </div>
-              </div>
-          </div>
-        <!--Heading ends-->
-           <div class="container my-4">
-              <!--Main section input section-->
-              <div class="row">
-                <div class="col-5">
-                  <form class="bg-dark opacity-75 text-white fw-bold">
-                    <div class="p-3 mb-3" id="newTaskNameInput">
-                      <label for="validationServer01" class="form-label">Name of the task</label>
-                      <input type="text" class="form-control is-invalid" id="validationServer01" value="name of the task" required>
-                      <div id="validationServer03Feedback" class="invalid-feedback">
-                        Please add a task.
-                      </div>
-                        <div id="form"> </div>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="p-3 mb-3" id="description">
-                      <label for="validationServer03" class="form-label">Description</label>
-                      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                      <div id="validationServer03Feedback" class="invalid-feedback">
-                        Please provide a description.
-                      </div>
-                    </div>
-                    <div class="mb-3" id="status of the project">
-                      <select class="form-select bg-transparent text-white fw-bold" aria-label="Status of the Project">
-                        <option selected>Status of the Project:</option>
-                        <option value="Started">Started</option>
-                        <option value="On Progress">On Progress</option>
-                        <option value="Completed">Completed</option>
-                      </select>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                      <div class="invalid-feedback">
-                        Please select!
-                      </div>
-                    <div class="dropdown p-3 mb-3" id="assignTo">
-                      <button class="btn dropdown-toggle" type="button" id="assignTo" data-bs-toggle="dropdown" aria-expanded="false">
-                        Assign to:
-                      </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard" href="#ethiopiasCard">Ethiopia Worku</a></li>
-                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="islamsCard" href="#islamsCard">Tauhidul Islam</a></li>
-                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="bancisCard" href="#banchisCard">Banchi</a></li>
-                            <li><a class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="alemayehusCard" href="#alemayehusCard">Alemayehu</a></li>
-                            <li><a  class="dropdown-item btn collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="natalysCard"  href="#natalysCard">Nataly</a></li>
-                        </ul>
-                      </div>
-                    <div class="md-3" id="dueDate">
-                      <label for="validationServer05" class="form-label">dueDate</label>
-                      <input type="date" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                      <div id="validationServer05Feedback" class="invalid-feedback">
-                      Please add a date.
-                      </div>
-                    </div>
-                    <div class="col-12" id="submit">
-                      <button class="p-3 mb-3" type="submit" id="button">Submit</button>
-                    </div>
-                  </form>
-                </div>    
-              </div>           
-                  <!--Main section input section ends-->
-              <!--Status section-->
-              <div class="row">
-                <div class="col-5">
-                  <div class="bg-dark opacity-75 text-white fw-bold">
-                  <!--Nataly's status card-->
-                    <div class="collapse" id="natalysCard">
-                    <div class="card bg-dark text-white fw-bold" >
-                      <div class="card-body">
-                        <h5 class="card-title">Nataly</h5>
-                        <img src="assets/img/nataly.jpg" class="card-img-top" alt="Nataly">
-                        <br>
-                        <h6 class="card-subtitle alert mb-2">On progress!</h6>
-                        <p class="card-text">
-                          Assined to: <em> Boolean Autocrats.</em>
-                          <br>
-                          Currently working on collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                    <!--Alemayehu's status card-->
-                    <div class="collapse" id="alemayehusCard">
-                      <div class="card bg-dark text-white fw-bold" >
-                      <div class="card-body">
-                        <h5 class="card-title">Alemayehu</h5>
-                        <img src="assets/img/alemayehu.jpg" class="card-img-top" alt="Alemayehu">
-                        <br>
-                        <h6 class="card-subtitle alert mb-2">Just Assigned!</h6>
-                        <p class="card-text">Assined to: <em> Hypertext Assassins.</em>
-                          <br>
-                          Currently working on the term "hypertext" is also sometimes used to describe tables, images, and other presentational content formats with integrated hyperlinks..
-                        </p>
-                      </div>
-                      </div>
-                    </div>
-        
-                    <!--Banchi's status card-->
-                    <div class="collapse" id="banchisCard">
-                      <div class="card bg-dark text-white fw-bold">
-                        <div class="card-body">
-                          <h5 class="card-title">Banchi</h5>
-                          <img src="assets/img/banchi.jpg" class="card-img-top" alt="Banchi">
-                          <br>
-                          <h6 class="card-subtitle alert mb-2">Just Assigned!</h6>
-                          <p class="card-text">Assined to: <em> Abstract Connoisseurs.</em>
-                          <br>
-                          Currently working on the usage of data types to perform data abstraction to separate usage from working representations of data structures within programs;
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <!--Ethiopia's status card-->
-                    <div class="collapse" id="ethiopiasCard">
-                      <div class="card bg-dark text-white fw-bold">
-                        <div class="card-body">
-                          <h5 class="card-title">Ethiopia Worku</h5>
-                          <img src="assets/img/ethiopia.jpg" class="card-img-top" alt="Ethiopia">
-                          <br>
-                          <h6 class="card-subtitle alert mb-2">Done!</h6>
-                          <p class="card-text">
-                            <strong>Assigned to: </strong><em>Dorty Theshhole.</em>
-                            <br>
-                            Currently working on an objective for keeping the user thoroughly engaged when interacting with a computer. If a response appears after the 400 ms threshold, users eventually become disinterested according to a study done in the late 1970s..</p>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <!--Islam's status card-->
-                    <div class="collapse" id="islamsCard">
-                      <div class="card bg-dark text-white fw-bold">
-                        <div class="card-body">
-                          <h5 class="card-title">Islam</h5>
-                          <img src="assets/img/islam.jpg" class="card-img-top" alt="Islam">
-                          <br>
-                          <h6 class="card-subtitle alert mb-2">On progress!</h6>
-                          <p class="card-text">
-                            <strong>Assigned to: </strong><em>Hault and catch fire.</em>
-                            <br>
-                            Currently working on the assembly mnemonic HCF, is an idiom referring to a computer machine code instruction that causes the computer's central processing unit to cease meaningful operation.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                </div>
-              </div>
-            <!--status card section ends-->
-         </div>  
-    </section>
-     <!--Js--> 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-     <script type="module" src="/JS/index.js"></script>
-     <scripts type="module" src="/JS/taskManager.js"></scripts>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Wheel of Life</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+ <body>
+  <body cz-shortcut-listen="true">
+    <div class="lists">
+      <div class="list">
+        <div class="list_title">
+          Task Manager App
+        </div>
+        <div class="list-body" id="list-body">
+        </div>
+        <div class="list_footer">
+          <button
+            id="add-task"
+            type="button"
+            name="add-button"
+            onclick="openModal('New')"
+            class="button">
+            Add task
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal_card">
+        <div id="modal_card_title" class="modal_card_title">New</div>
+        <div class="modal_card_body">
+          <form class="modal_form" onsubmit="myFunction(event)">
+            <label for="task-name">Name:
+              <input
+                type="text"
+                id="task-name"
+                name="task-name"
+                value=""
+                required
+                />
+            </label>
+            <label for="task-description">Description:
+              <textarea
+                name="task-description"
+                id="task-description"
+                rows="2"
+                cols="20"
+                required ></textarea>
+            </label>
+            <label for="task-priority">Priority:
+              <select
+                id="task-priority"
+                class="form-select"
+                name="task-priority"
+                required
+                >
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+            <label for="task-assignto">AssignTo:
+              <select
+                id="task-assignto"
+                class="form-select"
+                name="task-assignto"
+                required
+                >
+                <option value="text">Nataly</option>
+                <option value="text">Banchi</option>
+                <option value="text">Alemayu</option>
+                <option value="text">Etiopia</option>
+                <option value="text">Islam</option>
+              </select>
+            </label>
+            <label for="task-expiration">Expiration:
+              <input
+                id="task-expiration"
+                type="date"
+                name="task-expiration"
+                value=""
+                required
+              />
+            </label>
+            <input
+              id="task-id"
+              type="hidden"
+              name="task-id"
+              value="new"
+            />
+            <div class="form_button-container">
+              <button
+                type="button"
+                name="send-form"
+                class="button default edit"
+                onclick="closeModal()"
+              >
+              Cancel</button>
+              <button type="submit" name="send-form" class="button">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	<script src="JS/index.js"></script>
   </body>
+  <footer>
+  <h1 align="center"><span>Completed by Group: 11. We have use low, medium and high to establish the status of the task.</span></h1> 
+  </footer>
 </html>
